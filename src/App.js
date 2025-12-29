@@ -12,6 +12,8 @@ import Contact from "./components/sections/Contact";
 import Footer from "./components/sections/Footer";
 import MusicPlayer from "./components/MusicPlayer";
 import Certification from "./components/sections/Certification";
+import Preloader from "./components/Preloader";
+import { useState, useEffect } from "react";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -37,28 +39,38 @@ const Wrapper = styled.div`
 `;
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  // Loading handled by Preloader component callback
+
   return (
     <ThemeProvider theme={darkTheme}>
       <BrowserRouter>
-        <Navbar />
-        <Body>
-          <StartCanvas />
-          <MusicPlayer />
-          <div>
-            <Hero />
-            <Wrapper>
-              <Skills />
-              {/* <Experience /> */}
-            </Wrapper>
-            <Projects />
-            <Certification />
-            <Wrapper>
-              <Education />
-              <Contact />
-            </Wrapper>
-            <Footer />
-          </div>
-        </Body>
+        {loading ? (
+          <Preloader onComplete={() => setLoading(false)} />
+        ) : (
+          <>
+            <Navbar />
+            <Body>
+              <StartCanvas />
+              <MusicPlayer />
+              <div>
+                <Hero />
+                <Wrapper>
+                  <Skills />
+                  {/* <Experience /> */}
+                </Wrapper>
+                <Projects />
+                <Certification />
+                <Wrapper>
+                  <Education />
+                  <Contact />
+                </Wrapper>
+                <Footer />
+              </div>
+            </Body>
+          </>
+        )}
       </BrowserRouter>
     </ThemeProvider>
   );

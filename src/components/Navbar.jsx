@@ -3,6 +3,7 @@ import { Link as LinkR } from "react-router-dom";
 import styled, { useTheme } from "styled-components";
 import { Bio } from "../data/constants";
 import { MenuRounded } from "@mui/icons-material";
+import { playHoverSound, playClickSound } from "../utils/Sound";
 
 const Nav = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -160,28 +161,28 @@ const Navbar = () => {
         </MobileIcon>
 
         <NavItems>
-          <NavLink href="#About">About</NavLink>
-          <NavLink href="#Skills">Skills</NavLink>
-          {/* <NavLink href="#Experience">Experience</NavLink> */}
-          <NavLink href="#Projects">Projects</NavLink>
-          <NavLink href="#Education">Education</NavLink>
+          <NavLink href="#About" onMouseEnter={playHoverSound}>About</NavLink>
+          <NavLink href="#Skills" onMouseEnter={playHoverSound}>Skills</NavLink>
+          {/* <NavLink href="#Experience" onMouseEnter={playHoverSound}>Experience</NavLink> */}
+          <NavLink href="#Projects" onMouseEnter={playHoverSound}>Projects</NavLink>
+          <NavLink href="#Education" onMouseEnter={playHoverSound}>Education</NavLink>
         </NavItems>
 
         {isOpen && (
           <MobileMenu isOpen={isOpen}>
-            <NavLink onClick={() => setIsOpen(!isOpen)} href="#About">
+            <NavLink onClick={() => setIsOpen(!isOpen)} href="#About" onMouseEnter={playHoverSound}>
               About
             </NavLink>
-            <NavLink onClick={() => setIsOpen(!isOpen)} href="#Skills">
+            <NavLink onClick={() => setIsOpen(!isOpen)} href="#Skills" onMouseEnter={playHoverSound}>
               Skills
             </NavLink>
-            <NavLink onClick={() => setIsOpen(!isOpen)} href="#Experience">
+            <NavLink onClick={() => setIsOpen(!isOpen)} href="#Experience" onMouseEnter={playHoverSound}>
               Experience
             </NavLink>
-            <NavLink onClick={() => setIsOpen(!isOpen)} href="#Projects">
+            <NavLink onClick={() => setIsOpen(!isOpen)} href="#Projects" onMouseEnter={playHoverSound}>
               Projects
             </NavLink>
-            <NavLink onClick={() => setIsOpen(!isOpen)} href="#Education">
+            <NavLink onClick={() => setIsOpen(!isOpen)} href="#Education" onMouseEnter={playHoverSound}>
               Education
             </NavLink>
             <GithubButton
@@ -191,13 +192,14 @@ const Navbar = () => {
                 background: theme.primary,
                 color: theme.text_primary,
               }}
+              onMouseEnter={playHoverSound}
             >
               Github Profile
             </GithubButton>
           </MobileMenu>
         )}
         <ButtonContainer>
-          <GithubButton href={Bio.github} target="_Blank">
+          <GithubButton href={Bio.github} target="_Blank" onMouseEnter={playHoverSound}>
             Github Profile
           </GithubButton>
 
@@ -205,6 +207,7 @@ const Navbar = () => {
             href={Bio.linkedin}
             target="_Blank"
             style={{ marginLeft: "10px" }}
+            onMouseEnter={playHoverSound}
           >
             LinkedIn Profile
           </GithubButton>

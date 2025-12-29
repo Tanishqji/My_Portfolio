@@ -12,6 +12,7 @@ import {
   headTextAnimation,
 } from "../../utils/motion";
 import StarCanvas from "../canvas/Stars";
+import { playHoverSound } from "../../utils/Sound";
 
 const HeroContainer = styled.div`
   display: flex;
@@ -251,7 +252,7 @@ const Hero = () => {
                 <SubTitle>{Bio.description}</SubTitle>
               </motion.div>
 
-              <ResumeButton href={Bio.resume} target="_blank">
+              <ResumeButton href={Bio.resume} target="_blank" onMouseEnter={playHoverSound}>
                 Check Resume
               </ResumeButton>
             </HeroLeftContainer>
