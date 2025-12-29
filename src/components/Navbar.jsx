@@ -33,6 +33,8 @@ const NavLogo = styled(LinkR)`
   font-size: 18px;
   text-decoration: none;
   color: inherit;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 700;
 `;
 
 const NavItems = styled.ul`
@@ -194,26 +196,26 @@ const Navbar = () => {
             </GithubButton>
           </MobileMenu>
         )}
-<ButtonContainer>
-  <GithubButton href={Bio.github} target="_Blank">
-    Github Profile
-  </GithubButton>
+        <ButtonContainer>
+          <GithubButton href={Bio.github} target="_Blank">
+            Github Profile
+          </GithubButton>
 
-  <GithubButton
-    href={Bio.linkedin}
-    target="_Blank"
-    style={{ marginLeft: "10px" }}
-  >
-    LinkedIn Profile
-  </GithubButton>
-</ButtonContainer>
+          <GithubButton
+            href={Bio.linkedin}
+            target="_Blank"
+            style={{ marginLeft: "10px" }}
+          >
+            LinkedIn Profile
+          </GithubButton>
+        </ButtonContainer>
 
       </NavbarContainer>
     </Nav>
-    
+
   );
 
-  
+
 
 };
 

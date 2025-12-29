@@ -8,7 +8,7 @@ export const Bio = {
   ],
   description:
     "I am a B.Tech Computer Science student with a strong interest in full-stack development and modern web technologies. I enjoy working on projects that solve real problems and help me deepen my technical skills. I approach new challenges with curiosity, consistency, and a focus on delivering quality work. With a growth mindset and a passion for learning, I aim to contribute effectively in both individual and team-driven environments.",
-    resume:
+  resume:
     "https://drive.google.com/file/d/1qC6SVPgzFfLR0Qg7IUr6mzNW5oRILGLF/view",
   github: "https://github.com/Tanishqji",
   linkedin: "https://www.linkedin.com/in/tanishq-sejwar-90bba9229/",
@@ -26,7 +26,7 @@ export const skills = [
         image:
           "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K",
       },
-     
+
       {
         name: "Next Js",
         image:
@@ -51,9 +51,9 @@ export const skills = [
         image:
           "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
       },
-     
-     
-     
+
+
+
     ],
   },
   {// BACKEND PART
@@ -73,13 +73,13 @@ export const skills = [
         image:
           "https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg",
       },
-     
+
       {
         name: "MongoDB",
         image:
           "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
       },
-     {
+      {
         name: "Git",
         image:
           "https://e7.pngegg.com/pngimages/713/558/png-clipart-computer-icons-pro-git-github-logo-text-logo-thumbnail.png",
@@ -89,7 +89,7 @@ export const skills = [
         image:
           "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
       },
-       {
+      {
         name: "Netlify",
         image:
           "https://seeklogo.com/images/N/netlify-logo-BD8F8A77E2-seeklogo.com.png",
@@ -101,10 +101,10 @@ export const skills = [
       },
     ],
   },
- 
-  
- 
-  
+
+
+
+
 ];
 
 //  export const experiences = [];
@@ -113,7 +113,7 @@ export const education = [
   {
     id: 0,
     img: "https://tse3.mm.bing.net/th/id/OIP.hQHa7rIooJITK4GPDiRFgQHaHa?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3",
-    
+
     school: " Sushila devi bansal college",
     date: "feb 2021 - july 2025",
     grade: "7.40 CGPA",
@@ -141,9 +141,9 @@ export const education = [
 ];
 
 export const projects = [
- 
 
- {
+
+  {
     id: 1,
     title: "World talk chat web",
     date: "Oct 2022 - Jan 2023",
@@ -156,14 +156,14 @@ export const projects = [
       "MongoDb",
       "Node Js",
       "Express Js",
-      
+
     ],
     category: "web app",
     github: "https://github.com/Tanishqji/Multi-language-chat-app",
     webapp: "https://multilingual-chat-web-vicq.onrender.com/signup",
   },
-   {
-   id: 2,
+  {
+    id: 2,
     title: "Route finder",
     date: "jan 2023 - apr 2023",
     description:
@@ -175,7 +175,7 @@ export const projects = [
       "MongoDb",
       "Node Js",
       "Express Js",
-      
+
     ],
     category: "web app",
     github: "https://github.com/Tanishqji/Route-finder",
@@ -185,3 +185,25 @@ export const projects = [
 
 ];
 
+
+
+export const certifications = [
+  {
+    title: "Smart India Hackathon (SIH) 2023",
+    issuer: "Sushila Devi Bansal College",
+    date: "2023",
+    image: "https://raw.githubusercontent.com/Tanishqji/project-img/refs/heads/main/Screenshot%202025-12-29%20113334.png",
+  },
+  {
+    title: "Leadership Skill: Business Yoga From Bhagavad Gita",
+    issuer: "ISKCON & Bada Business",
+    date: "20 June 2021",
+    image: "https://raw.githubusercontent.com/Tanishqji/project-img/refs/heads/main/Screenshot%202025-12-29%20114249.png",
+  },
+  {
+    title: "Software Engineering Job Simulation",
+    issuer: "JPMorgan Chase & Co.",
+    date: "Sep 2025",
+    image: "https://raw.githubusercontent.com/Tanishqji/project-img/refs/heads/main/Screenshot%202025-12-29%20114415.png",
+  }
+];

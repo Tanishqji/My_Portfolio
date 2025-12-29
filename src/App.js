@@ -10,6 +10,8 @@ import StartCanvas from "./components/canvas/Stars";
 import Projects from "./components/sections/Projects";
 import Contact from "./components/sections/Contact";
 import Footer from "./components/sections/Footer";
+import MusicPlayer from "./components/MusicPlayer";
+import Certification from "./components/sections/Certification";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -22,13 +24,13 @@ const Wrapper = styled.div`
   padding-bottom: 100px;
   background: linear-gradient(
       38.73deg,
-      rgba(204, 0, 187, 0.15) 0%,
-      rgba(201, 32, 184, 0) 50%
+      rgba(76, 230, 9, 0.15) 0%,
+      rgba(76, 230, 9, 0) 50%
     ),
     linear-gradient(
       141.27deg,
-      rgba(0, 70, 209, 0) 50%,
-      rgba(0, 70, 209, 0.15) 100%
+      rgba(10, 200, 10, 0) 50%,
+      rgba(10, 200, 10, 0.15) 100%
     );
   width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 98%, 0 100%);
@@ -41,6 +43,7 @@ function App() {
         <Navbar />
         <Body>
           <StartCanvas />
+          <MusicPlayer />
           <div>
             <Hero />
             <Wrapper>
@@ -48,6 +51,7 @@ function App() {
               {/* <Experience /> */}
             </Wrapper>
             <Projects />
+            <Certification />
             <Wrapper>
               <Education />
               <Contact />

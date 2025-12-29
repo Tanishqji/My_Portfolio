@@ -1,18 +1,19 @@
 import React from "react";
-import { VerticalTimeline } from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
 import styled from "styled-components";
-import { education } from "../../data/constants";
-import EducationCard from "../cards/EducationCard";
-import EarthCanvas from "../canvas/Earth";
+import CertificationCard from "../cards/CertificationCard";
+import { certifications } from "../../data/constants";
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  justify-contnet: center;
-  position: rlative;
+  justify-content: center;
+  position: relative;
   z-index: 1;
   align-items: center;
+  padding: 40px 0px 80px 0px;
+  @media (max-width: 960px) {
+    padding: 0px;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -28,6 +29,7 @@ const Wrapper = styled.div`
     flex-direction: column;
   }
 `;
+
 const Title = styled.div`
   font-size: 52px;
   text-align: center;
@@ -40,39 +42,45 @@ const Title = styled.div`
     font-size: 32px;
   }
 `;
+
 const Desc = styled.div`
   font-size: 18px;
   text-align: center;
-  font-weight: 600;
+  max-width: 600px;
   color: ${({ theme }) => theme.text_secondary};
   @media (max-width: 768px) {
     font-size: 16px;
   }
 `;
 
-const Education = () => {
-  return (
-    <Container id="Education">
-      <Wrapper>
-        <Title>Education</Title>
-        <Desc
-          style={{
-            marginBottom: "40px",
-          }}
-        >
-          My education has been a journey of self-discovery and growth. My
-          educational details are as follows.
-        </Desc>
+const CardContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+`;
 
-        <VerticalTimeline>
-          {education.map((education, index) => (
-            <EducationCard key={`education-${index}`} education={education} />
+const Certification = () => {
+  // If certifications is undefined (until added to constants.js), default to empty array
+  const certs = typeof certifications !== 'undefined' ? certifications : [];
+
+  return (
+    <Container id="Certifications">
+      <Wrapper>
+        <Title>Certifications</Title>
+        <Desc>
+          Here are some of my certifications and achievements.
+        </Desc>
+        <CardContainer>
+          {certs.map((cert, index) => (
+            <CertificationCard key={index} certificate={cert} />
           ))}
-        </VerticalTimeline>
-        <EarthCanvas />
+        </CardContainer>
       </Wrapper>
     </Container>
   );
 };
 
-export default Education;
+export default Certification;

@@ -30,6 +30,7 @@ const Title = styled.div`
   font-weight: 600;
   margin-top: 20px;
   color: ${({ theme }) => theme.text_primary};
+  font-family: 'Orbitron', sans-serif;
   @media (max-width: 768px) {
     margin-top: 12px;
     font-size: 32px;
@@ -54,7 +55,8 @@ const ContactForm = styled.div`
   border: 1px solid rgba(255, 255, 255, 0.125);
   padding: 32px;
   border-radius: 12px;
-  box-shadow: rgba(23, 92, 230, 0.1) 0px 4px 24px;
+  box-shadow: rgba(76, 230, 9, 0.15) 0px 4px 24px;
+  border: 1px solid rgba(76, 230, 9, 0.2);
   margin-top: 28px;
   gap: 12px;
 `;
@@ -94,7 +96,12 @@ const ContactButton = styled.input`
   width: 100%;
   text-decoration: none;
   text-align: center;
-  background: hsla(271, 100%, 50%, 1);
+  background: hsla(102, 100%, 50%, 1);
+  background: linear-gradient(
+    225deg,
+    hsla(102, 100%, 50%, 1) 0%,
+    hsla(102, 90%, 40%, 1) 100%
+  );
   padding: 13px 16px;
   margin-top: 2px;
   border-radius: 12px;

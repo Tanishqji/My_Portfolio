@@ -33,6 +33,7 @@ const Title = styled.div`
   font-weight: 600;
   margin-top: 20px;
   color: ${({ theme }) => theme.text_primary};
+  font-family: 'Orbitron', sans-serif;
   @media (max-width: 768px) {
     margin-top: 12px;
     font-size: 32px;
@@ -106,9 +107,9 @@ const Projects = () => {
 
         <ToggleButtonGroup>
           {/* <ToggleButton */}
-            
-          
-            
+
+
+
           {/* </ToggleButton> */}
           {/* <Divider /> */}
           <ToggleButton

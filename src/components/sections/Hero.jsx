@@ -78,6 +78,8 @@ const Title = styled.div`
   font-size: 50px;
   color: ${({ theme }) => theme.text_primary};
   line-height: 68px;
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 0 0 10px rgba(76, 230, 9, 0.6), 0 0 20px rgba(76, 230, 9, 0.4);
 
   @media (max-width: 960px) {
     text-align: center;
@@ -141,23 +143,23 @@ const ResumeButton = styled.a`
   text-align: center;
   padding: 16px 0;
 
-  background: hsla(271, 100%, 50%, 1);
+  background: hsla(102, 100%, 50%, 1);
   background: linear-gradient(
     225deg,
-    hsla(271, 100%, 50%, 1) 0%,
-    hsla(294, 100%, 50%, 1) 100%
+    hsla(102, 100%, 50%, 1) 0%,
+    hsla(102, 90%, 40%, 1) 100%
   );
   background: -moz-linear-gradient(
     225deg,
-    hsla(271, 100%, 50%, 1) 0%,
-    hsla(294, 100%, 50%, 1) 100%
+    hsla(102, 100%, 50%, 1) 0%,
+    hsla(102, 90%, 40%, 1) 100%
   );
   background: -webkit-linear-gradient(
     225deg,
-    hsla(271, 100%, 50%, 1) 0%,
-    hsla(294, 100%, 50%, 1) 100%
+    hsla(102, 100%, 50%, 1) 0%,
+    hsla(102, 90%, 40%, 1) 100%
   );
-  box-shadow: 20px 20px 60px #1f2634, -20px -20px 60px #1f2634;
+  box-shadow: 20px 20px 60px #050705, -20px -20px 60px #050705;
   border-radius: 50px;
   font-weight: 600;
   font-size: 20px;
